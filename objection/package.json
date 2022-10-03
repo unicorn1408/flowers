@@ -1,0 +1,22 @@
+{
+  "name": "flowers-objection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "down": "npx knex migrate:down --knexfile ./db/knexfile.js",
+    "migrate": "npx knex migrate:latest --knexfile ./db/knexfile.js",
+    "make-seeds": "npx knex seed:make dev --knexfile ./db/knexfile.js",
+    "seed": "npx knex seed:run --knexfile ./db/knexfile.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "knex": "^2.3.0",
+    "objection": "^3.0.1",
+    "pg": "^8.8.0"
+  }
+}
